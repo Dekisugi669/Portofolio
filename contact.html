@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Me</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li> <!-- Updated to .html -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>Get in Touch</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Mencegah form dikirim dengan cara tradisional
+                
+                // Mengambil nilai input
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                // Nomor telepon WhatsApp tujuan (format internasional tanpa tanda + atau spasi)
+                const phone_number = '6281322789164'; // Ganti dengan nomor WhatsApp tujuan
+
+                // Membuat pesan yang akan dikirim
+                const whatsapp_message = `Hello, my name is ${name}. \nEmail: ${email} \n\n${message}`;
+
+                // Membuat URL WhatsApp
+                const whatsapp_url = `https://wa.me/${phone_number}?text=${encodeURIComponent(whatsapp_message)}`;
+
+                // Redirect ke WhatsApp
+                window.location.href = whatsapp_url;
+            });
+        </script>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Diki. All rights reserved.</p>
+    </footer>
+</body>
+</html>
