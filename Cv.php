@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,7 +38,7 @@
             <div class="item"><img src="img/13.jpg" alt=""></div>
 
             <!-- Add more projects as needed -->
-        </div>
+        <!-- </div>
     </section>
 
     <section id="skills" class="container">
@@ -58,4 +58,4 @@
         </div>
     </footer>
 </body>
-</html>
+</html> --> -->
