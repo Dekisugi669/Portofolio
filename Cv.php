@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - John Doe</title>
+    <title>CV - Diki Sugiri</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
         <div class="container">
-            <h1>Diki Sugiri</h1>
+            <h1>DIKI SUGIRI</h1>
             <p>Graphic Designer</p>
             <nav>
                 <ul>
@@ -26,16 +26,16 @@
     <section id="portfolio" class="container">
         <h2>My CV</h2>
         <div class="gallery">
-            <div class="item"><img src="img/4.png" alt="Project 1"></div>
-            <div class="item"><img src="img/5.png" alt="Project 2"></div>
-            <div class="item"><img src="img/6.png" alt="Project 3"></div>
-            <div class="item"><img src="img/7.png" alt="Project 3"></div>
-            <div class="item"><img src="img/8.png" alt="Project 3"></div>
-            <div class="item"><img src="img/9.jpg" alt="Project 3"></div>
-            <div class="item"><img src="img/10.jpg" alt="Project 3"></div>
-            <div class="item"><img src="img/11.jpg" alt="Project 3"></div>
-            <div class="item"><img src="img/12.jpg" alt="Project 3"></div>
-            <div class="item"><img src="img/13.jpg" alt="Project 3"></div>
+            <div class="item"><img src="img/4.png" alt=""></div>
+            <div class="item"><img src="img/5.png" alt=""></div>
+            <div class="item"><img src="img/6.png" alt=""></div>
+            <div class="item"><img src="img/7.png" alt=""></div>
+            <div class="item"><img src="img/8.png" alt=""></div>
+            <div class="item"><img src="img/9.jpg" alt=""></div>
+            <div class="item"><img src="img/10.jpg" alt=""></div>
+            <div class="item"><img src="img/11.jpg" alt=""></div>
+            <div class="item"><img src="img/12.jpg" alt=""></div>
+            <div class="item"><img src="img/13.jpg" alt=""></div>
 
             <!-- Add more projects as needed -->
         </div>
