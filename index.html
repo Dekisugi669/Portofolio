@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Graphic Designer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Diki Sugiri</h1>
-            <p>Graphic Designer</p>
-            <nav>
-                <ul>
-                    <li><a href="Cv.html">My CV</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+
+    <link href="bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bg-dark text-white py-5">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Diki Sugiri</h1>
+        <p class="lead">Passionate Graphic Designer</p>
+        <nav class="mt-3">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Cv.php">My CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Hello! I'm Diki Sugiri, a passionate graphic designer with experience in creating stunning visuals and impactful designs. Check out my portfolio below!</p>
+    <section id="about" class="container py-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">About Me</h2>
+      </div>
+      <p class="lead text-center">
+        Hello! I'm <strong>Diki Sugiri</strong>, a passionate graphic designer
+        with experience in creating stunning visuals and impactful designs.
+        Explore my portfolio below to see some of my best works!
+      </p>
     </section>
 
-    <section id="portfolio" class="container">
-        <h2>Portfolio</h2>
-        <div class="gallery">
-            <div class="item"><img src="Img/1.jpg" alt="Project 1"></div>
-            <div class="item"><img src="Img/2.jpg" alt="Project 2"></div>
-            <div class="item"><img src="Img/3.jpg" alt="Project 3"></div>
-            <!-- Add more projects as needed -->
+    <section id="portfolio" class="container py-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Portfolio</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Img/1.jpg" class="card-img-top" alt="Project 1" />
+            <div class="card-body">
+              <p class="card-text">Project 1 - Logo Design</p>
+            </div>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Img/2.jpg" class="card-img-top" alt="Project 2" />
+            <div class="card-body">
+              <p class="card-text">Project 2 - Packaging Design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Img/3.jpg" class="card-img-top" alt="Project 3" />
+            <div class="card-body">
+              <p class="card-text">Project 3 - Poster Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Diki Sugiri. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 Diki Sugiri. All rights reserved.</p>
     </footer>
-</body>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

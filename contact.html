@@ -1,66 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Graphic Designer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Contact Me</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li> <!-- Updated to .html -->
-                </ul>
-            </nav>
-        </div>
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="h3 mb-0">Contact Me</h1>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white active" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section class="container">
-        <h2>Get in Touch</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-
-        <script>
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
-                event.preventDefault(); // Mencegah form dikirim dengan cara tradisional
-                
-                // Mengambil nilai input
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const message = document.getElementById('message').value;
-
-                // Nomor telepon WhatsApp tujuan (format internasional tanpa tanda + atau spasi)
-                const phone_number = '6281322789164'; // Ganti dengan nomor WhatsApp tujuan
-
-                // Membuat pesan yang akan dikirim
-                const whatsapp_message = `Hello, my name is ${name}. \nEmail: ${email} \n\n${message}`;
-
-                // Membuat URL WhatsApp
-                const whatsapp_url = `https://wa.me/${phone_number}?text=${encodeURIComponent(whatsapp_message)}`;
-
-                // Redirect ke WhatsApp
-                window.location.href = whatsapp_url;
-            });
-        </script>
+    <!-- Contact Section -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Hubungi Diki</h2>
+      <form id="contactForm" class="p-4 border rounded shadow-sm bg-light">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">
+          Send Message
+        </button>
+      </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Diki. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 Diki. All rights reserved.</p>
     </footer>
-</body>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+          const phone_number = "6281322789164";
+
+          const whatsapp_message = `Hello, my name is ${name}. \nEmail: ${email} \n\n${message}`;
+          const whatsapp_url = `https://wa.me/${phone_number}?text=${encodeURIComponent(
+            whatsapp_message
+          )}`;
+
+          window.location.href = whatsapp_url;
+        });
+    </script>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
